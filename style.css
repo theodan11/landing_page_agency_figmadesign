@@ -134,6 +134,7 @@ nav {
 
 /* hero section */
 .hero-section {
+    background-position:center center ;
 
     background: url(./assets/Group\ 33.png);
     /* height: 100vh; */
@@ -332,6 +333,8 @@ nav {
     background-size: cover;
     background-position: left -40px;
     /* height: 100vh; */
+    background-position:center center ;
+
     padding: 150px 0;
 
     .top_container {
@@ -527,6 +530,7 @@ nav {
     background: url(./assets/ostad\ project2\ extrac.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center center ;
     
     .testimonial_container {
         padding: 120px 0;
