@@ -325,7 +325,7 @@ nav {
 
 
 
-
+/* Our Services Section */
 .out_service_section {
     background: url(./assets/ourservice.png);
     background-repeat: no-repeat;
@@ -333,9 +333,11 @@ nav {
     background-position: left -40px;
     /* height: 100vh; */
     padding: 150px 0;
+
     .top_container {
         padding: 60px 160px;
         margin-bottom: 60px;
+
         h1 {
             font-size: 52px;
             font-weight: bold;
@@ -365,7 +367,7 @@ nav {
     }
 
     .card_container {
-       
+
 
         .card_item {
             margin-bottom: 18px;
@@ -389,20 +391,21 @@ nav {
                 overflow: hidden;
                 border-radius: 28px;
                 box-shadow: 0 0 20px 1px #B2EBF2;
-    
+
                 img {
                     width: 100%;
                     object-fit: cover;
                 }
             }
-            .card_content{
+
+            .card_content {
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
                 flex-direction: column;
                 /* gap: 10px; */
 
-                h1{
+                h1 {
                     font-size: 24px;
                     font-weight: 500;
                     line-height: 38px;
@@ -428,29 +431,31 @@ nav {
                     border: 1px solid #00BCD4;
                     border-radius: 6px;
                     transition: background-color .3s ease;
-                    a{
+
+                    a {
                         text-decoration: none;
                         transition: color .3s ease;
                     }
 
-                    &:hover{
-                        background-color:  #00BCD4;
-                        a{
+                    &:hover {
+                        background-color: #00BCD4;
+
+                        a {
                             color: #fff;
                         }
                     }
                 }
             }
 
-            &:hover{
+            &:hover {
                 transform: translateY(-20px);
             }
         }
 
-        
+
     }
 
-    .arrow_container{
+    .arrow_container {
         position: absolute;
         right: 250px;
         bottom: -60px;
@@ -461,7 +466,7 @@ nav {
         width: 100px;
         height: 56px;
 
-        span{
+        span {
             cursor: pointer;
             width: 42px;
             height: 42px;
@@ -470,45 +475,140 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow:  0 0 12px 5px rgb(226, 226, 226);
+            box-shadow: 0 0 12px 5px rgb(226, 226, 226);
             transition: transform .3s ease;
-            i{
+
+            i {
                 color: #0d47a1;
                 font-size: 28px;
                 /* font-weight: 800; */
             }
-            &:hover{
+
+            &:hover {
                 transform: translateY(-4px);
             }
         }
 
-      
+
     }
 }
 
 
 
-
-.our_values_section{
-    .values_container{
+/* Our values Section */
+.our_values_section {
+    .values_container {
         padding: 150px 0;
-        .value_item{
+
+        .value_item {
             margin-bottom: 36px;
-            h1{
+
+            h1 {
                 font-size: 28px;
                 line-height: 42px;
                 font-weight: 500;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 line-height: 24px;
                 color: rgb(152, 152, 152);
-    
+
             }
         }
-      
+
     }
 }
+
+
+/* Client Testimonials section */
+.client_testimonials_section {
+    height: 870px;
+    background: url(./assets/ostad\ project2\ extrac.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .testimonial_container {
+        padding: 120px 0;
+        h1 {
+            color: #0d47a1;
+            font-size: 52px;
+            font-weight: bold;
+            line-height: 78px;
+        }
+        .testimonial_card_container{
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .m-card{
+
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #fff;
+                margin-bottom: 18px;
+                padding:36px 16px 16px 16px;
+                width: 248px;
+                height: 242px;
+                border-radius: 48px 48px 48px 0;
+                box-shadow: 0 0 16px 3px rgb(214, 245, 245);
+
+                p{
+                    font-size: 14px;
+                }
+
+                i{
+                    font-size: 28px;
+                    color: #0d47a1;
+
+                }
+            }
+
+            .profile_container{
+                margin-bottom: 16px;
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                .pimg_container{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 4px solid #fff;
+                    box-shadow: 0 0 5px 1px rgb(198, 232, 228);
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .pname_container{
+                    /* padding: 8px 0; */
+                    display: flex;
+                    flex-direction: column;
+                    /* gap: 3px; */
+
+                    h2{
+                        font-size: 18px;
+                        font-weight: 500;
+
+                    }
+
+                    h3{
+                        font-style: italic;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
 
 @media(max-width:992px) {
     nav {
@@ -544,18 +644,18 @@ nav {
         }
     }
 
-    .out_service_section{
-        .top_container{
+    .out_service_section {
+        .top_container {
             padding: 8px;
         }
 
-        .card_container{
-            .card_item{
+        .card_container {
+            .card_item {
                 flex-grow: 0.5;
             }
         }
 
-        .arrow_container{
+        .arrow_container {
             display: none;
         }
     }
