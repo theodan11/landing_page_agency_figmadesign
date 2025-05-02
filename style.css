@@ -134,7 +134,7 @@ nav {
 
 /* hero section */
 .hero-section {
-    background-position:center center ;
+    background-position: center center;
 
     background: url(./assets/Group\ 33.png);
     /* height: 100vh; */
@@ -333,7 +333,7 @@ nav {
     background-size: cover;
     background-position: left -40px;
     /* height: 100vh; */
-    background-position:center center ;
+    background-position: center center;
 
     padding: 150px 0;
 
@@ -526,26 +526,29 @@ nav {
 
 /* Client Testimonials section */
 .client_testimonials_section {
-    height: 870px;
+    /* height: 870px; */
     background: url(./assets/ostad\ project2\ extrac.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center center ;
-    
+    background-position: center center;
+
     .testimonial_container {
         padding: 120px 0;
+
         h1 {
             color: #0d47a1;
             font-size: 52px;
             font-weight: bold;
             line-height: 78px;
         }
-        .testimonial_card_container{
+
+        .testimonial_card_container {
             margin-top: 48px;
             display: flex;
             align-items: center;
             gap: 20px;
-            .m-card{
+
+            .m-card {
 
 
                 display: flex;
@@ -553,54 +556,56 @@ nav {
                 justify-content: space-between;
                 background-color: #fff;
                 margin-bottom: 18px;
-                padding:36px 16px 16px 16px;
+                padding: 36px 16px 16px 16px;
                 width: 248px;
                 height: 242px;
                 border-radius: 48px 48px 48px 0;
                 box-shadow: 0 0 16px 3px rgb(214, 245, 245);
 
-                p{
+                p {
                     font-size: 14px;
                 }
 
-                i{
+                i {
                     font-size: 28px;
                     color: #0d47a1;
 
                 }
             }
 
-            .profile_container{
+            .profile_container {
                 margin-bottom: 16px;
                 display: flex;
                 gap: 22px;
                 align-items: center;
-                .pimg_container{
+
+                .pimg_container {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
                     overflow: hidden;
                     border: 4px solid #fff;
                     box-shadow: 0 0 5px 1px rgb(198, 232, 228);
-                    img{
+
+                    img {
                         width: 100%;
                         object-fit: cover;
                     }
                 }
 
-                .pname_container{
+                .pname_container {
                     /* padding: 8px 0; */
                     display: flex;
                     flex-direction: column;
                     /* gap: 3px; */
 
-                    h2{
+                    h2 {
                         font-size: 18px;
                         font-weight: 500;
 
                     }
 
-                    h3{
+                    h3 {
                         font-style: italic;
                         font-weight: normal;
                         font-size: 14px;
@@ -610,6 +615,141 @@ nav {
         }
 
 
+
+
+    }
+
+    .logo_stripe_container {
+        margin: 100px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        height: 20px;
+    }
+}
+
+
+.case_studies_section {
+    .case_studies_container {
+
+        h1 {
+            color: #0d47a1;
+            font-size: 52px;
+            font-weight: bold;
+            line-height: 78px;
+            margin-bottom: 46px;
+        }
+
+        .m-nav-tabs {
+           
+            list-style: none;
+            flex-wrap: wrap;
+            li {
+                display: flex;
+
+                align-items: center;
+                justify-content: start;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-left: 3px;
+                width: 195px;
+                height: 38px;
+                margin-bottom: 6px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color .3s ease-in;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    transition: color .3s ease-in;
+
+                }
+
+                &:hover {
+                    background-color: #2196F3;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .m-custom-link-active {
+                background-color: #BBDEFB;
+
+                a {
+                    color: #0d47a1;
+                }
+
+            }
+
+        }
+    }
+
+    .write_to_us{
+        margin-top: 158px;
+        margin-bottom: 80px;
+        width: 1216px;
+        height: 168px;
+        background-color: #2196F3;
+        padding: 0 68px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        border-radius: 24px;
+        .heading_container{
+           h1{
+            font-size: 36px;
+            font-weight: bold;
+           }
+           h2{
+            font-size: 24px;
+            font-weight: 500;
+           }
+
+        }
+
+        .m-btn-custom {
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #FFF;
+            width: 212px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            border: .5px solid #00BCD4;
+            border-radius: 8px;
+            box-shadow: 0 0 8px .2px #00BCD4;
+            transition: all .8s ease;
+
+            span {
+                color: #00BCD4;
+                font-size: 16px;
+                font-weight: 500;
+                transition: all .3s ease;
+            }
+
+            img {
+                transition: transform .3s ease;
+
+            }
+
+            &:hover {
+                span {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    transform: translateX(12px);
+                }
+            }
+        }
     }
 }
 
