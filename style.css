@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    
 
 }
 
@@ -20,6 +20,7 @@ li {
 
 body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -219,7 +220,7 @@ nav {
                 right: 28px;
                 top: 14px;
                 height: 62px;
-                width: 0.1px;
+                width: 1.5px;
                 background-color: #D8D8D8;
                 display: inline-block;
             }
